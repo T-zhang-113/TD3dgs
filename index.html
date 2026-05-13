@@ -10,7 +10,7 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <meta content="English" name="language" />
   <meta content="Zhi Cen" name="author" />
-  <title>Ready-to-React: Online Reaction Policy for Two-Character Interaction Generation</title>
+  <title>TD-DGS: A Boundary-Aware Transient-Decoupled 3D Gaussian Splatting</title>
   <!-- Bootstrap -->
   <script src="static/js/jquery-3.4.1.min.js"></script>
   <script src="static/js/bootstrap-4.4.1.js"></script>
@@ -256,50 +256,50 @@
           <div class="col-12">
             <h1 style="font-weight: bold">
               <b>
-                <span style="color: #6589bf">Ready-to-React</span>:
-                <span style="color: #c68b5b">Online</span> Reaction Policy for <br>
-                <span style="color: #78aa58">Two-Character</span>
-                Interaction Generation
+                TD-DGS: A Boundary-Aware Transient-Decoupled 3D Gaussian Splatting
               </b>
             </h1>
-            <h4 style="color:#5a6268;">ICLR 2025</h4>
+            <!-- <h4 style="color:#5a6268;">ICLR 2025</h4> -->
             <hr>
-            <a href="https://anitacen.github.io/">Zhi Cen<sup>1</sup></a>
-            <a href="https://phj128.github.io/">Huaijin Pi<sup>2</sup> </a>
-            <a href="https://pengsida.net" target="_blank">Sida Peng<sup>1</sup> </a>
-            <a href="https://chingswy.github.io/">Qing Shuai<sup>1</sup> </a>
-            <a href="https://shenyujun.github.io/">Yujun Shen<sup>3</sup> </a>
-            <a href="http://www.cad.zju.edu.cn/home/bao/" target="_blank">Hujun Bao<sup>1</sup> </a>
-            <a href="https://xzhou.me" target="_blank">Xiaowei Zhou<sup>1</sup> </a>
-            <a href="https://csse.szu.edu.cn/staff/ruizhenhu/" target="_blank">Ruizhen Hu<sup>4*</sup>
-            </a>
+            <a href="https://anitacen.github.io/">Tong Zhang<sup>1</sup></a>
+            <a href="https://phj128.github.io/">Rui Zhang<sup>2*</sup> </a>
+            <a href="https://pengsida.net" target="_blank">Cuizhu Bao<sup>1</sup> </a>
+            <a href="https://chingswy.github.io/">Mahmoud Hassaballah<sup>4</sup><sup>5</sup>  </a>
+            <a href="https://shenyujun.github.io/">Aura Conci<sup>6</sup> </a>
+            <a href="http://www.cad.zju.edu.cn/home/bao/" target="_blank">Abdulkadir Sengur<sup>7</sup> </a>
+            <a href="https://xzhou.me" target="_blank">XKaren Egiazarian<sup>8</sup> </a>
+            <a href="https://csse.szu.edu.cn/staff/ruizhenhu/" target="_blank">Yan Tian<sup>1</sup><sup>3*</sup></a>
             <p>
-              <sup>1</sup>Zhejiang University 
-              <sup>2</sup>The University of Hong Kong 
-              <sup>3</sup>Ant Group 
-              <sup>4</sup>Shenzhen University 
+              <sup>1</sup>School of Computer Science and Technology, Zhejiang Gongshang University
+              <sup>2</sup>School of Management and E-Business, Zhejiang Gongshang University
+              <sup>3</sup>Zhejiang Key Laboratory of Big Data and Future E-Commerce Technology
+              <sup>4</sup>Department of Computer Science, College of Computer Engineering and Sciences, Prince Sattam Bin Abdulaziz University
+              <sup>5</sup>Department of Computer Science, Qena University
+              <sup>6</sup>Department of Computer Science, Universidade Federal Fluminense
+              <sup>7</sup>Department of Electrical and Electronic Engineering, Faculty of Technology, Firat University
+              <sup>8</sup>Department of Computing Sciences, Tampere University
               <br><sup>*</sup>Corresponding Author
             </p>
             <div class="row justify-content-center">
               <div class="column">
                 <p class="mb-5">
-                  <a class="btn btn-large btn-light" href="https://drive.google.com/file/d/1nsgAV841NDyINoY0k14IdbqCMIKGCjwj/view?usp=sharing" role="button" target="_blank">
+                  <a class="btn btn-large btn-light" href="TD-DGS.pdf" role="button" target="_blank">
                     <i class="fa fa-file-pdf-o"></i>
                     <b>Paper</b>
                   </a>
                 </p>
               </div>
-              <div class="column">
+              <!-- <div class="column">
                 <p class="mb-5">
                   <a class="btn btn-large btn-light" href="https://drive.google.com/file/d/1JJzTs_Nq4xDoxTBJEehY1jPnJfKvYQok/view?usp=sharing" role="button" target="_blank">
                     <i class="fa fa-file-pdf-o"></i>
                     <b>Supp Mat</b>
                   </a>
                 </p>
-              </div>
+              </div> -->
               <div class="column">
                 <p class="mb-5">
-                  <a class="btn btn-large btn-light" href="https://arxiv.org/abs/2502.20370" role="button" target="_blank">
+                  <a class="btn btn-large btn-light" href="#" role="button" target="_blank">
                     <i class="ai ai-arxiv"></i>
                     <b>arXiv</b>
                   </a>
@@ -307,9 +307,9 @@
               </div>
               <div class="column">
                 <p class="mb-5">
-                  <a class="btn btn-large btn-light" href="https://github.com/zju3dv/ready_to_react" role="button" target="_blank">
+                  <a class="btn btn-large btn-light" role="button" target="_blank">
                     <i class="fa fa-github"></i>
-                    <b>Code</b>
+                    <b>Code (Coming Soon)</b>
                   </a>
                 </p>
               </div>
@@ -328,7 +328,8 @@
           <hr style="margin-top: 0px" />
           <!-- <img src="img/overview.jpg" width="100%" /> -->
           <p class="text-left">
-            This paper addresses the task of generating two-character online interactions. Previously, two main settings existed for two-character interaction generation: (1) generating one’s motions based on the counterpart’s complete motion sequence, and (2) jointly generating two-character motions based on specific conditions. We argue that these settings fail to model the process of real-life two-character interactions, where humans will react to their counterparts in real time and act as independent individuals. In contrast, <strong>we propose an online reaction policy, called Ready-to-React, to generate the next character pose based on past observed motions.</strong> Each character has its own reaction policy as its “brain”, enabling them to interact like real humans in a streaming manner. Our policy is implemented by incorporating a diffusion head into an auto-regressive model, which can dynamically respond to the counterpart’s motions while effectively mitigating the error accumulation throughout the generation process. We conduct comprehensive experiments using the challenging boxing task. Experimental results demonstrate that our method outperforms existing baselines and can generate extended motion sequences. Additionally, we show that our approach can be controlled by sparse signals, making it well-suited for VR and other online interactive environments.
+            Transient object removal aims to eliminate dynamic distractions from multi-view or multi-temporal inputs, thereby enabling stable and high-fidelity 3D scene reconstruction. However, existing 3D Gaussian Splatting (3DGS)-based approaches typically assume static scenes with consistent geometry and appearance, making them vulnerable to transient disturbances commonly found in real-world environments. These limitations manifest in three main aspects: (1) transient objects disrupt multi-view geometric consistency; (2) naive removal strategies often introduce visual artifacts and structural holes; and (3) conventional semantic masks often suffer from boundary noise and fragmented delineation when applied at the pixel level, especially under complex textures and illumination variations. To overcome these challenges, we introduce Transiently Decoupled 3D Gaussian Splatting (TD-3DGS). By explicitly decoupling the background from interfering elements, we enable their separate rendering, effectively eliminating distractors while preventing post-removal artifacts and holes. Furthermore, we employ a
+segmentation algorithm to address the problem of imprecise boundary detection of interfering objects by semantic masks. Our approach achieves a 2.3\% increase in Peak Signal-to-Noise Ratio (PSNR) compared to existing approaches, resulting in a significant improvement in reconstruction robustness and visual fidelity.
           </p>
         </div>
       </div>
