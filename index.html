@@ -326,11 +326,11 @@
         <div class="col-12">
           <h3>Abstract</h3>
           <hr style="margin-top: 0px" />
-          <img src="static/img/abstract.png" width="100%" />
-          <!-- <p class="text-left">
+          <!-- <img src="static/img/abstract.png" width="100%" /> -->
+          <p class="text-left">
             Transient object removal aims to eliminate dynamic distractions from multi-view or multi-temporal inputs, thereby enabling stable and high-fidelity 3D scene reconstruction. However, existing 3D Gaussian Splatting (3DGS)-based approaches typically assume static scenes with consistent geometry and appearance, making them vulnerable to transient disturbances commonly found in real-world environments. These limitations manifest in three main aspects: (1) transient objects disrupt multi-view geometric consistency; (2) naive removal strategies often introduce visual artifacts and structural holes; and (3) conventional semantic masks often suffer from boundary noise and fragmented delineation when applied at the pixel level, especially under complex textures and illumination variations. To overcome these challenges, we introduce Transiently Decoupled 3D Gaussian Splatting (TD-3DGS). By explicitly decoupling the background from interfering elements, we enable their separate rendering, effectively eliminating distractors while preventing post-removal artifacts and holes. Furthermore, we employ a
 segmentation algorithm to address the problem of imprecise boundary detection of interfering objects by semantic masks. Our approach achieves a 2.3\% increase in Peak Signal-to-Noise Ratio (PSNR) compared to existing approaches, resulting in a significant improvement in reconstruction robustness and visual fidelity.
-          </p> -->
+          </p>
         </div>
       </div>
     </div>
@@ -343,10 +343,10 @@ segmentation algorithm to address the problem of imprecise boundary detection of
           <h3>Method Overview</h3>
           <hr style="margin-top: 0px" />
           <p style="text-align:center;"> 
-            <img src="static/img/image.png" width="80%"/>
+            <img src="static/img/image.png" width="10%"/>
           </p>
           <p>
-            <strong>An overview of our approach. </strong>We first extract intermediate semantic feature representations from the latent space of the diffusion model, and train an MLP to produce an initial mask, M1. utilizing the segmentation outcome of the input image, we refine the boundary of M1 to obtain an optimized mask M2 . Finally, we initialize two sets of Gaussian points to represent the static background and distractor regions, respectively. The background Gaussians are initialized following the same strategy as in 3D Gaussian Splatting, while the distractor Gaussians are initialized per view using the refined mask M2. The background and distractors are rendered separately, and the final loss is computed and optimized after alpha blending their rendered results.
+            <img src="static/img/overword.png" width="100%"/>
           </p>
         </div>
       </div>
